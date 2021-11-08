@@ -15,4 +15,9 @@
     <ProjectReference Include="AutoGuistModel\AutoGuistModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="AutoGuistModel\bin\" />
+    <Folder Include="AutoGuistModel\obj\" />
+  </ItemGroup>
+
 </Project>

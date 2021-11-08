@@ -69,7 +69,6 @@
     <Compile Include="Car.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AutoGeist.mdf">
@@ -83,6 +82,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Car.datasource" />
+    <None Include="Properties\DataSources\Customer.datasource" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

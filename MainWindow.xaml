@@ -7,9 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TabControl>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="364*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="4">
             <TabItem Header="Cars">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5" Margin="11,0,8,0" RenderTransformOrigin="0.5,0.5" Height="414">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.221"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                </Grid>
             </TabItem>
             <TabItem Header="Customers">
                 <Grid Background="#FFE5E5E5"/>
@@ -18,6 +33,7 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
+        <DatePicker HorizontalAlignment="Left" Height="214" Margin="-166,-419,0,0" VerticalAlignment="Top" Width="400"/>
 
     </Grid>
 </Window>
